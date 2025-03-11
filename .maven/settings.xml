@@ -1,9 +1,16 @@
+<?xml version="1.0"?>
 <settings>
+
+  <pluginGroups>
+    <pluginGroup>org.mule.tools</pluginGroup>
+  </pluginGroups>
+
   <servers>
     <server>
       <id>Repository</id>
-      <username>${env.CLIENT_ID}</username> <!-- Ensure CLIENT_ID is set as an environment variable -->
-      <password>${env.CLIENT_SECRET}</password> <!-- Ensure CLIENT_SECRET is set as an environment variable -->
+      <username>~~~Client~~~</username>
+      <password>${client.id}~?~${client.secret}</password>
     </server>
   </servers>
+
 </settings>
