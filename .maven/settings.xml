@@ -6,15 +6,4 @@
       <password>${env.CLIENT_SECRET}</password> <!-- Ensure CLIENT_SECRET is set as an environment variable -->
     </server>
   </servers>
-  <proxies>
-    <proxy>
-      <id>ex-proxy</id>
-      <active>true</active>
-      <protocol>http</protocol>
-      <host>proxy.example.com</host>
-      <port>8080</port>
-      <username>ars_710</username>
-      <password>710@Anypoint</password>
-    </proxy>
-  </proxies>
 </settings>
