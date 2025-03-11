@@ -1,9 +1,9 @@
 <settings>
-	<servers>
-		<server>
-			<id>Repository</id>
-			<username>~~~Client~~~</username>
-			<password>${client.id}~?~${client.secret}</password>
-		</server>
-	</servers>
+  <servers>
+    <server>
+      <id>Repository</id>
+      <username>${env.CLIENT_ID}</username> <!-- Ensure CLIENT_ID is set as an environment variable -->
+      <password>${env.CLIENT_SECRET}</password> <!-- Ensure CLIENT_SECRET is set as an environment variable -->
+    </server>
+  </servers>
 </settings>
