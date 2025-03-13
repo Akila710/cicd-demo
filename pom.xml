@@ -4,7 +4,7 @@
 
 	<groupId>5e24d110-fe62-437a-8758-9884782f2281</groupId>
 	<artifactId>git-actions-demo</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>git-actions-demo</name>
@@ -36,7 +36,6 @@
 			            <provider>MC</provider>
 			            <environment>Sandbox</environment>
 			            <target>Cloudhub-US-East-2</target>
-			            <server>Repository</server>
 				    <muleVersion>3.9.6</muleVersion>
 			            <applicationName>${project.artifactId}</applicationName>
 			            <releaseChannel>NONE</releaseChannel>
@@ -45,6 +44,9 @@
             			<deploymentSettings>
                 			<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
             			</deploymentSettings>
+					<properties>
+						<server>Repository</server>
+					</properties>
         			</cloudhub2Deployment>
     			</configuration>
 			</plugin>
