@@ -46,7 +46,6 @@
             			</deploymentSettings>
         			</cloudhub2Deployment>
     			</configuration>
-=======
 					<classifier>mule-application</classifier>
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
@@ -63,11 +62,9 @@
 						</deploymentSettings>
 					</cloudhub2Deployment>
 				</configuration>
->>>>>>> b7165dd (updated)
 			</plugin>
 		</plugins>
 	</build>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.mule.connectors</groupId>
@@ -105,19 +102,16 @@
 			<layout>default</layout>
 		</repository>
 		<repository>
-<<<<<<< HEAD
             		<id>Repository</id>
             		<name>Private Exchange repository</name>
             		<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
             		<layout>default</layout>
-        </repository>
-=======
+                </repository>
 			<id>Repository</id>
 			<name>Private Exchange repository</name>
 			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
 			<layout>default</layout>
 		</repository>
->>>>>>> b7165dd (updated)
 	</repositories>
 
 	<pluginRepositories>
@@ -131,5 +125,4 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
-
 </project>
