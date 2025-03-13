@@ -8,11 +8,10 @@
 	<packaging>mule-application</packaging>
 
 	<name>git-actions-demo</name>
-
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
 		<app.runtime>4.7.0</app.runtime>
 		<mule.maven.plugin.version>4.2.0</mule.maven.plugin.version>
 	</properties>
@@ -22,7 +21,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-clean-plugin</artifactId>
-				<version>4.2.0</version>
+				<version>3.2.0</version>
 			</plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
@@ -30,6 +29,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+<<<<<<< HEAD
         			<classifier>mule-application</classifier>
         			<cloudhub2Deployment>
 			            <uri>https://anypoint.mulesoft.com</uri>
@@ -47,6 +47,24 @@
             			</deploymentSettings>
         			</cloudhub2Deployment>
     			</configuration>
+=======
+					<classifier>mule-application</classifier>
+					<cloudhub2Deployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<provider>MC</provider>
+						<environment>Sandbox</environment>
+						<target>Cloudhub-US-East-2</target>
+						<server>Repository</server>
+						<applicationName>${project.artifactId}</applicationName>
+						<releaseChannel>NONE</releaseChannel>
+						<replicas>1</replicas>
+						<vCores>0.1</vCores>
+						<deploymentSettings>
+							<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
+						</deploymentSettings>
+					</cloudhub2Deployment>
+				</configuration>
+>>>>>>> b7165dd (updated)
 			</plugin>
 		</plugins>
 	</build>
@@ -66,13 +84,13 @@
 		</dependency>
 	</dependencies>
 	<distributionManagement>
-        <repository>
-            <id>Repository</id>
-            <name>Corporate Repository</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
-            <layout>default</layout>
-        </repository>
-    </distributionManagement>
+		<repository>
+			<id>Repository</id>
+			<name>Corporate Repository</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
+			<layout>default</layout>
+		</repository>
+	</distributionManagement>
 
 	<repositories>
 		<repository>
@@ -88,11 +106,19 @@
 			<layout>default</layout>
 		</repository>
 		<repository>
+<<<<<<< HEAD
             		<id>Repository</id>
             		<name>Private Exchange repository</name>
             		<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
             		<layout>default</layout>
         </repository>
+=======
+			<id>Repository</id>
+			<name>Private Exchange repository</name>
+			<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/${project.groupId}/maven</url>
+			<layout>default</layout>
+		</repository>
+>>>>>>> b7165dd (updated)
 	</repositories>
 
 	<pluginRepositories>
