@@ -60,8 +60,6 @@ jobs:
         USERNAME: ${{ secrets.CLIENT_ID }}
         PASSWORD: ${{ secrets.CLIENT_SECRET }}
       run: |
-        artifactName=$(ls *.jar | head -1)
         mvn deploy --settings .maven/settings.xml -DskipMunitTests -DmuleDeploy \
-         -Dmule.artifact=$artifactName \
          -Danypoint.username="$USERNAME" \
          -Danypoint.password="$PASSWORD"
