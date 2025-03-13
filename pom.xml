@@ -37,6 +37,7 @@
 			            <environment>Sandbox</environment>
 			            <target>Cloudhub-US-East-2</target>
 				    <muleVersion>3.9.6</muleVersion>
+				    <server>Repository</server>
 			            <applicationName>${project.artifactId}</applicationName>
 			            <releaseChannel>NONE</releaseChannel>
 			            <replicas>1</replicas>
@@ -44,9 +45,6 @@
             			<deploymentSettings>
                 			<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
             			</deploymentSettings>
-					<properties>
-						<server>Repository</server>
-					</properties>
         			</cloudhub2Deployment>
     			</configuration>
 			</plugin>
